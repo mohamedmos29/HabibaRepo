@@ -58,7 +58,6 @@ class pSerializers(serializers.ModelSerializer):
             'Password', 
             'PhoneNumber',
             'Handel',
-            'ProfilePicture',
             'Male',
             'Female',
         ]
@@ -87,7 +86,6 @@ class ESerializers(serializers.ModelSerializer):
             'Password',  # Ensure Password is included here
             'PhoneNumber',
             'yourHandel',
-            'ProfilePicture',
             'Male',
             'Female',
             'LastModified'
