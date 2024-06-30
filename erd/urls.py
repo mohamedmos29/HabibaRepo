@@ -23,6 +23,8 @@ router.register(r'Document', views.GetDocument,basename='Document')
 router.register(r'Medicine', views.GetMedicine,basename='Medicine')
 router.register(r'Register', views.GetRegister,basename='Register')
 router.register(r'Login', views.getLogin,basename='Login')
+router.register(r'Login', views.GetUserType,basename='UserType')
+
 
 
 urlpatterns = [
