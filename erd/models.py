@@ -20,12 +20,14 @@ class GenerateProfileImagePath(object):
 user_profile_image_path=GenerateProfileImagePath()
 
 
-# class Profile(models.Model):
-#     username=models.OneToOneField(User,on_delete=models.CASCADE)
-#     image=models.FileField(upload_to=user_profile_image_path,blank=True,null=True)
-#     def __str__(self):
-#         return f'{self.user.username}\'s Profile'
 
+class UserType(models.Model):
+    Escort = models.BooleanField(default=True)
+    patient = models.BooleanField(default=False)
+    def __str__(self):
+        return self.Escort
+    class Meta:
+        ordering=['Escort']
 
 
 class Login(models.Model):
