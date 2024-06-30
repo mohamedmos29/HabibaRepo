@@ -6,9 +6,9 @@ from .models import Medicine
 from .models import Reminder
 from .models import Document
 from .models import Register
-# from .models import Profile
-#from .models import Login
 from .models import Login
+from .models import UserType
+
 
 
 # class ProfileAdmin(admin.ModelAdmin):
@@ -23,3 +23,5 @@ admin.site.register(Medicine)
 admin.site.register(Reminder)
 admin.site.register(Document)
 admin.site.register(Login)
+admin.site.register(UserType)
+
